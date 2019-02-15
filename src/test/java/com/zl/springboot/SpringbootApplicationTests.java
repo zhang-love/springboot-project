@@ -24,6 +24,10 @@ public class SpringbootApplicationTests {
         }
         System.out.println(testEnum.LOGIN.getKey());
     }
+    @Test
+    public void testSql(){
+
+    }
 
 }
 

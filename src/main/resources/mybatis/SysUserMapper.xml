@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace要指定mapper文件的全类名-->
+<mapper namespace="com.zl.springboot.dao.SysUserDao">
+    <select id="getUser" parameterType="com.zl.springboot.po.SysUserPo">
+        select username,password from sys_user where
+        username = #{username} and password = #{password}
+    </select>
+</mapper>
